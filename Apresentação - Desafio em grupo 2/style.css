@@ -308,13 +308,22 @@ ul li:last-child {
 
 .class-ind {
   position: relative;
-  height: 4%;
-  width: 4%;
-  margin-left: 90vw;
-  bottom: -7em;
+  /* height: 4%;
+  width: 4%; */
+  /* margin-left: 90vw; */
+  /* bottom: -7em; */
   border-radius: 5px;
   animation: rotateButton 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3 forwards;
+
+  height: 9%;
+  width: 5%;
+  margin: 1px 1px 1px 1px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
 }
+
 
 @keyframes rotateButton {
   0%,
