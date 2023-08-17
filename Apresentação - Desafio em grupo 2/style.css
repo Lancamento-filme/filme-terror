@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Sora:wght@300;500&display=swap");
+
+body {
+  color: white;
+  background: url("./Background.png") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.blink {
+  animation: blink-background 5s infinite;
+  }
+
+#home, #descricao, #elenco {
+  visibility: hidden;
+}
+
+#home {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#olhos {
+  position: fixed;
+  left: 45%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  width: 100px;
+  /* height: 100px; */
+  margin: auto;
+  animation: animation-olhos 3s infinite;
+  z-index: 1;
+}
+
+@keyframes animation-olhos {
+  0% {
+    opacity: 0.1;
+    width: 50px;
+  }
+  25% {
+    opacity: 0.2;
+    width: 60px;
+  }
+  50% {
+    opacity: 0.3;
+    width: 70px;
+  }
+  75% {
+    opacity: 0.4;
+    width: 80px;
+  }
+  100% {
+    opacity: 0.5;
+    width: 90px;
+  }
+}
+
+h1 {
+  margin: auto;
+  color: rgb(136, 8, 8);
+  font-family: "Rubik Wet Paint", cursive;
+  font-size: 7em;
+  text-align: center;
+  animation: animation-h1 3s;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-family: "Rubik Wet Paint", cursive;
+  letter-spacing: 0.1em;
+}
+
+h3{
+  font-family: "Rubik Wet Paint", cursive;
+}
+
+@keyframes animation-h1 {
+  0% {
+    font-size: 2em;
+  }
+  20% {
+    font-size: 3em;
+  }
+  40% {
+    font-size: 4em;
+  }
+  60% {
+    font-size: 5em;
+  }
+  80% {
+    font-size: 6em;
+  }
+  100% {
+    font-size: 7em;
+  }
+}
+
+button {
+  display: flex;
+  margin: auto;
+  z-index: 2;
+  background-color: rgb(136, 8, 8);
+}
+
+.container {
+  width: 80%;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.container h2 {
+  text-align: center;
+  color: rgb(136, 8, 8);
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  margin: 2em;
+}
+
+.container ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.container li {
+  margin-bottom: 5px;
+}
+
+.container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+  /* margin-bottom: 20px; */
+  margin: auto;
+  padding: 1.3em;
+  border-radius: 3em;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+#descricao {
+  display: flex;
+  height: 60vh;
+  margin-top: 5em;
+}
+
+#sinopse {
+  width: 50%;
+}
+
+#trailer {
+  width: 50%;
+}
+
+#fotos {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+#elenco img {
+  width: auto;
+  height: auto;
+  margin-right: 10px;
+  transform: rotate(3deg);
+  transform-origin: top right;
+  transition: transform 0.5s, flex 0.6s, opacity 0.6s;
+  aspect-ratio: 9 / 16;
+  min-width: 0;
+  flex: 1 1 10px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+#elenco img:hover {
+  flex: 1 1 100px;
+  opacity: 1;
+  transform: rotate(0deg); /* Reverte a rotação ao passar o mouse */
+  cursor: pointer;
+}
+
+#elenco h2 {
+  margin: 1em;
+}
+
+.letter {
+  transition: 0.04s;
+  transform: translateX(0);
+  cursor: grab;
+  color: rgb(136, 8, 8);
+}
+
+.letter:hover {
+  background: -webkit-linear-gradient(to bottom, red, transparent);
+  background: linear-gradient(to bottom, red, rgba(255, 0, 0, 0.467));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#cima {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.animation-word {
+  margin-top: 0;
+  animation: animation-h1 3s;
+  margin-bottom: 30px;
+}
+
+#lancamento-data {
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 2rem; /* Adjust the font size as needed */
+  opacity: 0;
+  animation: fade-in 1s ease-in-out 3s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink-background {
+  0%, 100% {
+    background-color: black; /* Dark background */
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.2); /* Slightly transparent background */
+  }
+}
+
+
+footer {
+  text-align: center;
+  background-color: rgb(136, 8, 8);
+  padding: 2em 0; 
+}
+
+footer h2 {
+  margin: 0;
+  font-size: 1.5em; 
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  font-weight: 400;
+  font-family: "Rubik Wet Paint", cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em; 
+}
+
+ul li {
+  margin: 0;
+  font-size: 1.1em; 
+  color: white;
+}
+
+ul, li, a:hover {
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.467);
+  /* color: blueviolet; */
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+ul li:last-child {
+  margin-right: 0; 
+}
+
+.class-ind {
+  height: 4%;
+  width: 4%;
+  margin: 1px 1px 1px 1px
+}
