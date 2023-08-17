@@ -12,9 +12,11 @@ body {
 
 .blink {
   animation: blink-background 5s infinite;
-  }
+}
 
-#home, #descricao, #elenco {
+#home,
+#descricao,
+#elenco {
   visibility: hidden;
 }
 
@@ -24,6 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 #olhos {
@@ -72,13 +75,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 3.5em;
   font-family: "Rubik Wet Paint", cursive;
   letter-spacing: 0.1em;
 }
 
-h3{
+h3 {
   font-family: "Rubik Wet Paint", cursive;
+  margin-top: 1em;
 }
 
 @keyframes animation-h1 {
@@ -121,7 +125,7 @@ button {
 
 .container h2 {
   text-align: center;
-  color: rgb(136, 8, 8);
+  color: #660000;
   margin-bottom: 10px;
 }
 
@@ -165,6 +169,12 @@ button {
 
 #sinopse {
   width: 50%;
+  background-color: #4c0c6242;
+  border-radius: 20px;
+}
+
+#sinopse p {
+  text-align: justify;
 }
 
 #trailer {
@@ -211,17 +221,9 @@ button {
 
 .letter:hover {
   background: -webkit-linear-gradient(to bottom, red, transparent);
-  background: linear-gradient(to bottom, red, rgba(255, 0, 0, 0.467));
+  background: linear-gradient(45deg, #330000, #6d0000, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-#cima {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 .animation-word {
@@ -231,7 +233,6 @@ button {
 }
 
 #lancamento-data {
-  margin-top: 0;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -250,7 +251,8 @@ button {
 }
 
 @keyframes blink-background {
-  0%, 100% {
+  0%,
+  100% {
     background-color: black; /* Dark background */
   }
   50% {
@@ -258,16 +260,15 @@ button {
   }
 }
 
-
 footer {
   text-align: center;
   background-color: rgb(136, 8, 8);
-  padding: 2em 0; 
+  padding: 2em 0;
 }
 
 footer h2 {
   margin: 0;
-  font-size: 1.5em; 
+  font-size: 1.5em;
   color: white;
 }
 
@@ -279,32 +280,48 @@ ul {
   flex-direction: row;
   justify-content: center;
   gap: 1em;
-  margin-top: 1em; 
+  margin-top: 1em;
 }
 
 ul li {
   margin: 0;
-  font-size: 1.1em; 
+  font-size: 1.1em;
   color: white;
 }
 
-ul, li, a:hover {
+ul,
+li,
+a:hover {
   cursor: pointer;
   color: rgba(255, 0, 0, 0.467);
   /* color: blueviolet; */
 }
 
-a{
+a {
   color: white;
   text-decoration: none;
 }
 
 ul li:last-child {
-  margin-right: 0; 
+  margin-right: 0;
 }
 
 .class-ind {
+  position: relative;
   height: 4%;
   width: 4%;
-  margin: 1px 1px 1px 1px
+  margin-left: 90vw;
+  bottom: -7em;
+  border-radius: 5px;
+  animation: rotateButton 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3 forwards;
+}
+
+@keyframes rotateButton {
+  0%,
+  100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
 }
