@@ -232,7 +232,7 @@ button {
   margin: 1em;
 }
 
-.letter {
+/* .letter {
   transition: 0.04s;
   transform: translateX(0);
   cursor: grab;
@@ -244,7 +244,23 @@ button {
   background: linear-gradient(45deg, #330000, #6d0000, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+} */
+
+ .letter {
+  transition: 0.04s;
+  transform: translateX(0);
+  cursor: grab;
+  color: #ffaa00;
+  text-shadow: 0 0 25px  #ff0000 ; 
 }
+
+.letter:hover {
+  background: -webkit-linear-gradient(to bottom, red, transparent);
+  background: linear-gradient(45deg, #330000, #6d0000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   text-shadow: none 
+} 
 
 .animation-word {
   margin-top: 0;
@@ -258,6 +274,8 @@ button {
   display: flex;
   font-size: 2rem; /* Adjust the font size as needed */
   opacity: 0;
+  color: white; /* White neon */ 
+  text-shadow: 0 0 0px black, 0 0 10px #03ff25;
   animation: fade-in 1s ease-in-out 3s forwards;
 }
 
@@ -294,6 +312,18 @@ footer h2 {
   margin: 0;
   font-size: 1.5em;
   color: white;
+}
+
+footer a:hover {
+  color: #ff6666; /* Dark red */
+}
+
+/* Dark background and hover effect for links */
+footer a {
+  background-color: #222;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 ul {
