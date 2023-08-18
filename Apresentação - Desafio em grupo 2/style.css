@@ -92,7 +92,7 @@ h2 {
   letter-spacing: 0.3em;
 }
 
-h3 {
+#home h3 {
   font-family: "Rubik Wet Paint", cursive;
   margin-top: 1em;
 }
@@ -175,13 +175,15 @@ button {
 
 #descricao {
   display: flex;
+  justify-content: center;
   height: 60vh;
   margin-top: 5em;
 }
 
 #sinopse {
-  width: 50%;
-  background-color: #4c0c6242;
+  width: 45%;
+  /* background-color: #28004d; */
+  background-color: #33333350;
   border-radius: 20px;
 }
 
@@ -190,13 +192,19 @@ button {
 }
 
 #trailer {
-  width: 50%;
+  width: 45%;
 }
 
 #fotos {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
+}
+
+#elenco {
+  margin-top: 8em;
+  height: 100vh;
+  /* margin-bottom: 15em; */
 }
 
 #elenco img {
@@ -274,7 +282,11 @@ button {
 
 footer {
   text-align: center;
-  background-color: rgb(136, 8, 8);
+  background: url(./halloween_background_with_blood_splatters_and_drips_1409.jpg);
+  opacity: 0.8;
+  /* background-color: rgb(136, 8, 8); */
+  /* background: url(./fnaf_classificacai__j3v0nf3zw-1210x544.webp); */
+  background: cover;
   padding: 2em 0;
 }
 
@@ -317,8 +329,8 @@ ul li:last-child {
   margin-right: 0;
 }
 
-h3{
-  font-family: 'Special Elite', cursive;
+h3 {
+  font-family: "Special Elite", cursive;
 }
 
 .class-ind {
@@ -341,5 +353,243 @@ h3{
   }
   50% {
     transform: rotateY(180deg);
+  }
+}
+
+#assista {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8em auto;
+}
+
+#assista img {
+  width: 90%;
+  margin: auto;
+}
+
+.shadow__btn {
+  padding: 20px 30px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  position: absolute;
+  right: 5.4vw;
+  bottom: -88em;
+  z-index: 1;
+  font-family: "Special Elite", cursive;
+  line-height: 1.5em;
+}
+.shadow__btn {
+  background: #990000;
+  box-shadow: 0 0 25px #990000;
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px #990000, 0 0 25px #990000, 0 0 50px #990000,
+    0 0 100px #990000;
+}
+
+.anuncio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 200px;
+  position: absolute;
+  right: 5.4vw;
+  bottom: -95em;
+  z-index: 1;
+  font-family: "Special Elite", cursive;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.anuncio .btn {
+  height: 50px;
+  margin: 20px;
+  margin-bottom: 40px;
+  width: 155px;
+  padding: 0 5em;
+}
+
+.anuncio .btn a {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 0, 0, 0.5);
+  border-radius: 30px;
+  box-shadow: 0 15px 35px rgba(255, 0, 0, 0.2);
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.anuncio .btn:hover a {
+  letter-spacing: 2px;
+}
+
+.anuncio .btn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 0, 0, 0.15), transparent);
+  transform: skewX(45deg) translateX(0);
+  transition: 0.5s;
+}
+
+.anuncio .btn:hover a::before {
+  transform: skewX(45deg) translateX(200%);
+}
+
+.anuncio .btn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  height: 10px;
+  width: 30px;
+  background: #f91a01;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.anuncio .btn:hover::before {
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.anuncio .btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  height: 10px;
+  width: 30px;
+  background: #8b0000;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.anuncio .btn:hover::after {
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.anuncio .btn:nth-child(1):before,
+.anuncio .btn:nth-child(1)::after {
+  background: #8b0000;
+  box-shadow: 0 0 5px #8b00008a, 0 0 15px #8b0000, 0 0 30px #8b0000,
+    0 0 60px #8b0000;
+}
+
+.anuncio .btn:active a {
+  color: #000;
+}
+
+#sectionComplementar {
+  display: flex;
+  justify-content: center;
+}
+
+#teaser {
+  width: 45%;
+}
+#curiosidades {
+  width: 45%;
+  margin: 0;
+}
+
+#curiosidades {
+  width: 45%;
+  /* background-color: #28004d; */
+  background-color: #33333350;
+  border-radius: 20px;
+}
+
+#curiosidades h2 {
+  /* font-family: "Rubik Wet Paint", cursive; */
+}
+
+#curiosidades p {
+  text-align: justify;
+}
+
+.curiosidade-card {
+  border: 1px solid white;
+  margin: 1.3em 1.5em;
+  /* padding: 20px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.curiosidade-card:hover {
+  transform: translate(0, -0.8em) rotateX(3deg);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #33333350;
+}
+
+#imageDiv {
+  min-width: 100%;
+  height: 80vh;
+  background: url(./images-selecionadas/intro-1684724117.jpg) no-repeat center
+    center;
+  /* background: cover; */
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#imageDiv img {
+  width: 45%;
+  height: auto;
+  animation: animation-title 1s infinite;
+}
+
+@keyframes animation-title {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: .5;
+  
+  }
+  100%{
+    opacity: 0;
   }
 }
