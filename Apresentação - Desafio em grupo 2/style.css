@@ -8,6 +8,56 @@ body {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  animation: animation-body 5s infinite;
+}
+
+@keyframes animation-body {
+  0% {
+    background: url("./background/0.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  10% {
+    background: url("./background/10.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  20% {
+    background: url("./background/20.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  30% {
+    background: url("./background/30.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  40% {
+    background: url("./background/40.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  50% {
+    background: url("./background/50.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  60% {
+    background: url("./background/60.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  70% {
+    background: url("./background/70.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  80% {
+    background: url("./background/80.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  90% {
+    background: url("./background/90.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  100% {
+    background: url("./background/100.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+ 
+  
 }
 
 .blink {
@@ -317,13 +367,13 @@ ul li:last-child {
 
   height: 9%;
   width: 5%;
-  margin: 1px 1px 1px 1px;
+  /* margin: 1px 1px 3px 3px; */
+  margin-bottom: 1em;
+  margin-right: 1em;
   position: fixed;
   bottom: 0;
   right: 0;
-
 }
-
 
 @keyframes rotateButton {
   0%,
