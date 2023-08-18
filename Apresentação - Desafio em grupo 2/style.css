@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Sora:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Sora:wght@300;500&family=Special+Elite&display=swap");
 
 body {
   color: white;
@@ -56,8 +56,6 @@ body {
     background: url("./background/100.png") no-repeat center center fixed;
     background-size: cover;
   }
- 
-  
 }
 
 .blink {
@@ -79,42 +77,6 @@ body {
   text-align: center;
 }
 
-#olhos {
-  position: fixed;
-  left: 45%;
-  right: 50%;
-  top: 50%;
-  bottom: 50%;
-  width: 100px;
-  /* height: 100px; */
-  margin: auto;
-  animation: animation-olhos 3s infinite;
-  z-index: 1;
-}
-
-@keyframes animation-olhos {
-  0% {
-    opacity: 0.1;
-    width: 50px;
-  }
-  25% {
-    opacity: 0.2;
-    width: 60px;
-  }
-  50% {
-    opacity: 0.3;
-    width: 70px;
-  }
-  75% {
-    opacity: 0.4;
-    width: 80px;
-  }
-  100% {
-    opacity: 0.5;
-    width: 90px;
-  }
-}
-
 h1 {
   margin: auto;
   color: rgb(136, 8, 8);
@@ -125,9 +87,9 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5em;
-  font-family: "Rubik Wet Paint", cursive;
-  letter-spacing: 0.1em;
+  font-size: 3.8em;
+  font-family: "Special Elite", cursive;
+  letter-spacing: 0.3em;
 }
 
 h3 {
@@ -310,12 +272,11 @@ button {
   }
 }
 
-/* footer {
+footer {
   text-align: center;
   background-color: rgb(136, 8, 8);
   padding: 2em 0;
 }
-
 
 footer h2 {
   margin: 0;
@@ -345,30 +306,27 @@ li,
 a:hover {
   cursor: pointer;
   color: rgba(255, 0, 0, 0.467);
-  /* color: blueviolet; */
-/* } */
+}
 
 a {
   color: white;
   text-decoration: none;
 }
 
-/* ul li:last-child {
+ul li:last-child {
   margin-right: 0;
-} */ 
+}
+
+h3{
+  font-family: 'Special Elite', cursive;
+}
 
 .class-ind {
   position: relative;
-  /* height: 4%;
-  width: 4%; */
-  /* margin-left: 90vw; */
-  /* bottom: -7em; */
   border-radius: 5px;
   animation: rotateButton 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3 forwards;
-
   height: 9%;
   width: 5%;
-  /* margin: 1px 1px 3px 3px; */
   margin-bottom: 1em;
   margin-right: 1em;
   position: fixed;
@@ -384,43 +342,4 @@ a {
   50% {
     transform: rotateY(180deg);
   }
-}
-
-footer {
-  background-color: #222;
-  color: #fff;
-  padding: 40px 0;
-  text-align: center;
-  font-family: "Rubik Wet Paint", cursive;
-
-}
-
-footer h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-footer h3 {
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-footer ul {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 10px;
-}
-
-footer li {
-  margin: 5px 0;
-}
-
-footer a {
-  color: #ff4500;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-footer a:hover {
-  color: #ffa500;
 }
