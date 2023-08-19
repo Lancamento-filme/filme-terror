@@ -417,13 +417,19 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 200px;
-  position: absolute;
-  right: 5.4vw;
-  bottom: -95em;
-  z-index: 1;
   font-family: "Rubik Wet Paint", cursive;
   line-height: 1.5em;
   text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+  z-index: 999;
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.anuncio:hover {
+  opacity: 1;
 }
 
 .anuncio .btn {
