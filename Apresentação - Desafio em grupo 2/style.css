@@ -127,7 +127,7 @@ button {
 
 .container {
   width: 80%;
-  background-color: black;
+  background-color: #000;
   padding: 20px;
   border-radius: 10px;
   margin: 20px auto;
@@ -246,12 +246,12 @@ button {
   -webkit-text-fill-color: transparent;
 } */
 
- .letter {
+.letter {
   transition: 0.04s;
   transform: translateX(0);
   cursor: grab;
   color: #ffaa00;
-  text-shadow: 0 0 25px  #ff0000 ; 
+  text-shadow: 0 0 25px #ff0000;
 }
 
 .letter:hover {
@@ -259,8 +259,8 @@ button {
   background: linear-gradient(45deg, #330000, #6d0000, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-   text-shadow: none 
-} 
+  text-shadow: none;
+}
 
 .animation-word {
   margin-top: 0;
@@ -274,7 +274,7 @@ button {
   display: flex;
   font-size: 2rem; /* Adjust the font size as needed */
   opacity: 0;
-  color: white; /* White neon */ 
+  color: white; /* White neon */
   text-shadow: 0 0 0px black, 0 0 10px #03ff25;
   animation: fade-in 1s ease-in-out 3s forwards;
 }
@@ -300,7 +300,7 @@ button {
 
 footer {
   text-align: center;
-  background: url(./halloween_background_with_blood_splatters_and_drips_1409.jpg);
+  /* background: url(./halloween_background_with_blood_splatters_and_drips_1409.jpg); */
   opacity: 0.8;
   /* background-color: rgb(136, 8, 8); */
   /* background: url(./fnaf_classificacai__j3v0nf3zw-1210x544.webp); */
@@ -310,8 +310,10 @@ footer {
 
 footer h2 {
   margin: 0;
+  margin-bottom: 1.3em;
   font-size: 1.5em;
-  color: white;
+  color: #660000;
+  font-family: "Rubik Wet Paint", cursive;
 }
 
 footer a:hover {
@@ -436,7 +438,7 @@ h3 {
   right: 5.4vw;
   bottom: -95em;
   z-index: 1;
-  font-family: "Special Elite", cursive;
+  font-family: "Rubik Wet Paint", cursive;
   line-height: 1.5em;
   text-align: center;
 }
@@ -595,9 +597,12 @@ h3 {
 #imageDiv {
   min-width: 100%;
   height: 80vh;
-  background: url(./images-selecionadas/intro-1684724117.jpg) no-repeat center
-    center;
-  /* background: cover; */
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 99%
+    ),
+    url(./images-selecionadas/intro-1684724117.jpg);
   background-size: cover;
   background-position: center;
   margin: 0 auto;
@@ -612,14 +617,13 @@ h3 {
 }
 
 @keyframes animation-title {
-  0%{
+  0% {
     opacity: 1;
   }
-  50%{
-    opacity: .5;
-  
+  50% {
+    opacity: 0.5;
   }
-  100%{
+  100% {
     opacity: 0;
   }
 }
