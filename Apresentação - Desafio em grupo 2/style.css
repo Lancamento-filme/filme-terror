@@ -348,7 +348,7 @@ h3 {
   font-family: "Special Elite", cursive;
 }
 
-.class-ind {
+/* .class-ind {
   position: relative;
   border-radius: 5px;
   animation: rotateButton 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3 forwards;
@@ -359,6 +359,17 @@ h3 {
   position: fixed;
   bottom: 0;
   right: 0;
+} */
+
+.class-ind {
+  position: fixed;
+  border-radius: 5px;
+  animation: rotateButton 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3 forwards;
+  height: 9%;
+  width: 5%;
+  bottom: 0;
+  left: 0; /* Define a posição no canto inferior esquerdo */
+  margin: 1em;
 }
 
 @keyframes rotateButton {
