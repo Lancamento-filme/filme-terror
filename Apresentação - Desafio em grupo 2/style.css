@@ -162,7 +162,6 @@ button {
   max-width: 560px;
   height: 315px;
   border: none;
-  /* margin-bottom: 20px; */
   margin: auto;
   padding: 1.3em;
   border-radius: 3em;
@@ -180,18 +179,20 @@ button {
   margin-top: 5em;
 }
 
-#sinopse {
+#sinopse,
+#curiosidades {
   width: 45%;
-  /* background-color: #28004d; */
   background-color: #33333350;
   border-radius: 20px;
 }
 
-#sinopse p {
+#sinopse p,
+#curiosidades p {
   text-align: justify;
 }
 
-#trailer {
+#trailer,
+#teaser {
   width: 45%;
 }
 
@@ -204,7 +205,7 @@ button {
 #elenco {
   margin-top: 8em;
   height: 100vh;
-  /* margin-bottom: 15em; */
+  margin-bottom: 15em;
 }
 
 #elenco img {
@@ -232,20 +233,6 @@ button {
   margin: 1em;
 }
 
-/* .letter {
-  transition: 0.04s;
-  transform: translateX(0);
-  cursor: grab;
-  color: rgb(136, 8, 8);
-}
-
-.letter:hover {
-  background: -webkit-linear-gradient(to bottom, red, transparent);
-  background: linear-gradient(45deg, #330000, #6d0000, #000000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
 .letter {
   transition: 0.04s;
   transform: translateX(0);
@@ -272,9 +259,9 @@ button {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 2rem; /* Adjust the font size as needed */
+  font-size: 2rem;
   opacity: 0;
-  color: white; /* White neon */
+  color: white;
   text-shadow: 0 0 0px black, 0 0 10px #03ff25;
   animation: fade-in 1s ease-in-out 3s forwards;
 }
@@ -300,10 +287,6 @@ button {
 
 footer {
   text-align: center;
-  /* background: url(./halloween_background_with_blood_splatters_and_drips_1409.jpg); */
-  opacity: 0.8;
-  /* background-color: rgb(136, 8, 8); */
-  /* background: url(./fnaf_classificacai__j3v0nf3zw-1210x544.webp); */
   background: cover;
   padding: 2em 0;
 }
@@ -312,7 +295,7 @@ footer h2 {
   margin: 0;
   margin-bottom: 1.3em;
   font-size: 1.5em;
-  color: #660000;
+  color: red;
   font-family: "Rubik Wet Paint", cursive;
 }
 
@@ -557,33 +540,9 @@ h3 {
   justify-content: center;
 }
 
-#teaser {
-  width: 45%;
-}
-#curiosidades {
-  width: 45%;
-  margin: 0;
-}
-
-#curiosidades {
-  width: 45%;
-  /* background-color: #28004d; */
-  background-color: #33333350;
-  border-radius: 20px;
-}
-
-#curiosidades h2 {
-  /* font-family: "Rubik Wet Paint", cursive; */
-}
-
-#curiosidades p {
-  text-align: justify;
-}
-
 .curiosidade-card {
   border: 1px solid white;
   margin: 1.3em 1.5em;
-  /* padding: 20px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
