@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Sora:wght@300;500&family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Wet+Paint&family=Sora:wght@300;500&family=Special+Elite&display=swap");
 
 body {
   color: white;
@@ -90,11 +90,15 @@ h2 {
   font-size: 3.8em;
   font-family: "Special Elite", cursive;
   letter-spacing: 0.3em;
+  font-weight: 600;
 }
 
-#home h3 {
-  font-family: "Rubik Wet Paint", cursive;
-  margin-top: 1em;
+h3 {
+  font-family: "Special Elite", cursive;
+}
+
+p {
+  font-family: "Special Elite", cursive;
 }
 
 @keyframes animation-h1 {
@@ -191,6 +195,11 @@ button {
   text-align: justify;
 }
 
+#sinopse p{
+  margin: 2em 3em auto 3em;
+
+}
+
 #trailer,
 #teaser {
   width: 45%;
@@ -259,7 +268,9 @@ button {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  font-size: 3em;
+  margin-top: -0.6em;
   opacity: 0;
   color: white;
   text-shadow: 0 0 0px black, 0 0 10px #03ff25;
@@ -344,23 +355,6 @@ ul li:last-child {
   margin-right: 0;
 }
 
-h3 {
-  font-family: "Special Elite", cursive;
-}
-
-/* .class-ind {
-  position: relative;
-  border-radius: 5px;
-  animation: rotateButton 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3 forwards;
-  height: 9%;
-  width: 5%;
-  margin-bottom: 1em;
-  margin-right: 1em;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-} */
-
 .class-ind {
   position: fixed;
   border-radius: 5px;
@@ -433,7 +427,7 @@ h3 {
   text-align: center;
   position: fixed;
   bottom: 20px;
-  right: 20px; 
+  right: 20px;
   z-index: 999;
   opacity: 0.2;
   transition: opacity 0.3s ease-in-out;
