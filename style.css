@@ -11,6 +11,10 @@ body {
   animation: animation-body 5s ease infinite;
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
 @keyframes animation-body {
 
   10% {
