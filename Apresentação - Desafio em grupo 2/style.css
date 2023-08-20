@@ -63,7 +63,8 @@ body {
 }
 
 #home,
-#descricao #sectiComplementar, #elenco {
+#descricao #sectiComplementar,
+#elenco {
   visibility: hidden;
 }
 
@@ -299,6 +300,7 @@ footer {
   text-align: center;
   background: cover;
   padding: 2em 0;
+  margin-top: 2em;
 }
 
 footer h2 {
@@ -602,7 +604,7 @@ ul li:last-child {
 }
 
 /* tela de tablets */
-@media (min-width: 768px) {
+@media (max-width: 900px) {
   body {
     font-size: 12px;
   }
@@ -644,4 +646,39 @@ ul li:last-child {
     width: 17em;
     height: 7em;
   }
+  footer ul {
+    flex-direction: column;
+   }
+  
+   footer ul li {
+    margin-top: 1em;
+   }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  #lancamento-data {
+    font-size: 2em;
+    margin-top: -1.6em;
+  }
+  .container iframe {
+    height: 220px;
+  }
+  #imageDiv img{
+    width: 75%;
+  }
+  #data-titulo-fim{
+    margin-top: -11.5em;
+  }
+ .btn a {
+  font-size: 12px;
+  line-height: 1em;
+ }
+
 }
