@@ -602,12 +602,18 @@ ul li:last-child {
     opacity: 0;
   }
 }
+@media (max-width: 1100px) {
+  h2{
+    font-size: 3em;
+  }
+}
 
 /* tela de tablets */
 @media (max-width: 900px) {
   body {
     font-size: 12px;
   }
+ 
   #home {
     min-height: 60vh;
   }
