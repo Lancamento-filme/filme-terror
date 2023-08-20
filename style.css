@@ -608,6 +608,9 @@ ul li:last-child {
   h2{
     font-size: 3em;
   }
+  #elenco {
+    height: 50vh;
+  }
 }
 
 /* tela de tablets */
