@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Wet+Paint&family=Sora:wght@300;500&family=Special+Elite&display=swap");
 
-body {
+/*body {
   color: white;
   background: url("./Background.png") no-repeat center center fixed;
   background-size: cover;
@@ -9,9 +9,24 @@ body {
   align-items: center;
   justify-content: center;
   animation: animation-body 5s infinite;
+}*/
+
+/* Estilos comuns para diferentes tamanhos de tela */
+body {
+  color: white;
+  margin: 0;
+  font-family: "Special Elite", cursive;
+  font-size: 16px;
 }
 
-@keyframes animation-body {
+/* Animação de fundo */
+body {
+  background: url("./Background.png") no-repeat center center fixed;
+  background-size: cover;
+  animation: animation-body 5s infinite;
+}
+
+/*@keyframes animation-body {
   0% {
     background: url("./background/0.png") no-repeat center center fixed;
     background-size: cover;
@@ -54,6 +69,27 @@ body {
   }
   100% {
     background: url("./background/100.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+}*/
+
+/* Keyframes para a animação de fundo */
+@keyframes animation-body {
+  0%,
+  100% {
+    background: url("./background/0.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90% {
+    background: url("./background/10.png") no-repeat center center fixed;
     background-size: cover;
   }
 }
@@ -195,9 +231,8 @@ button {
   text-align: justify;
 }
 
-#sinopse p{
+#sinopse p {
   margin: 2em 3em auto 3em;
-
 }
 
 #trailer,
@@ -213,8 +248,8 @@ button {
 
 #elenco {
   margin-top: 8em;
-  height: 100vh;
-  margin-bottom: 15em;
+  height: auto;
+  margin-bottom: 1em;
 }
 
 #elenco img {
@@ -575,7 +610,7 @@ ul li:last-child {
     url(./images-selecionadas/intro-1684724117.jpg);
   background-size: cover;
   background-position: center;
-  margin: 0 auto;
+  margin: 10em auto;
   display: flex;
   flex-direction: column;
 }
@@ -595,5 +630,119 @@ ul li:last-child {
   }
   100% {
     opacity: 0;
+  }
+}
+
+/*@midia (min-width: 768px) {
+  body {
+    flex-direction: column;
+    font-size: 2em;
+  }
+  h1 {
+    font-size: 100em;
+  }
+}*/
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 10px;
+    margin: 15px 0;
+  }
+  #home {
+    padding: 20px;
+  }
+  .container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .container iframe {
+    height: 250px;
+    padding: 1.5em;
+  }
+
+  #sinopse p {
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 5em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.4em;
+    margin: 20px 0;
+  }
+
+  #home {
+    padding: 40px;
+  }
+
+  .container {
+    width: 70%;
+    padding: 30px;
+  }
+
+  .container iframe {
+    height: 315px;
+    padding: 2em;
+  }
+
+  #sinopse {
+    width: 60%;
+    margin: auto;
+  }
+
+  #sinopse p {
+    font-size: 1em;
+    margin: 20px 10px;
+  }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  #home {
+    padding: 10px;
+  }
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+  .container iframe {
+    height: 200px;
+    padding: 1em;
+  }
+
+  #sinopse {
+    width: 60%;
+    margin: auto;
+  }
+
+  #sinopse p {
+    font-size: 1em;
+    margin: 20px 10px;
   }
 }
