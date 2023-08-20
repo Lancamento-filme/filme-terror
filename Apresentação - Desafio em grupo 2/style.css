@@ -2,20 +2,17 @@
 
 body {
   color: white;
-  background: url("./Background.png") no-repeat center center fixed;
+  background: url("./background/Background.png") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  animation: animation-body 5s infinite;
+  animation: animation-body 5s ease infinite;
 }
 
 @keyframes animation-body {
-  0% {
-    background: url("./background/0.png") no-repeat center center fixed;
-    background-size: cover;
-  }
+
   10% {
     background: url("./background/10.png") no-repeat center center fixed;
     background-size: cover;
@@ -23,18 +20,23 @@ body {
   20% {
     background: url("./background/20.png") no-repeat center center fixed;
     background-size: cover;
+
+
   }
   30% {
     background: url("./background/30.png") no-repeat center center fixed;
     background-size: cover;
+
   }
   40% {
     background: url("./background/40.png") no-repeat center center fixed;
     background-size: cover;
+
   }
   50% {
     background: url("./background/50.png") no-repeat center center fixed;
     background-size: cover;
+
   }
   60% {
     background: url("./background/60.png") no-repeat center center fixed;
