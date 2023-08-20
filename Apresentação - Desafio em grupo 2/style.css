@@ -63,8 +63,7 @@ body {
 }
 
 #home,
-#descricao,
-#elenco {
+#descricao #sectiComplementar, #elenco {
   visibility: hidden;
 }
 
@@ -179,7 +178,7 @@ button {
 #descricao {
   display: flex;
   justify-content: center;
-  height: 60vh;
+  /* height: 60vh; */
   margin-top: 5em;
 }
 
@@ -195,9 +194,9 @@ button {
   text-align: justify;
 }
 
-#sinopse p{
+#sinopse p {
   margin: 2em 3em auto 3em;
-
+  padding-bottom: 2em;
 }
 
 #trailer,
@@ -586,8 +585,8 @@ ul li:last-child {
   animation: animation-title 1s infinite;
 }
 
-#data-titulo-fim{
-  margin-top: -19em
+#data-titulo-fim {
+  margin-top: -19em;
 }
 
 @keyframes animation-title {
@@ -599,5 +598,50 @@ ul li:last-child {
   }
   100% {
     opacity: 0;
+  }
+}
+
+/* tela de tablets */
+@media (min-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  #home {
+    min-height: 60vh;
+  }
+  .class-ind {
+    width: 4em;
+    height: auto;
+  }
+  #descricao,
+  #sectionComplementar {
+    flex-direction: column;
+  }
+  #sinopse,
+  #curiosidades,
+  #trailer,
+  #teaser {
+    width: 100%;
+  }
+  #sinopse,
+  #teaser {
+    margin-bottom: 4em;
+  }
+  #elenco {
+    margin: 20% auto;
+    height: 30vh;
+  }
+  #imageDiv {
+    height: 60vh;
+  }
+  #imageDiv img {
+    width: 60%;
+  }
+  #data-titulo-fim {
+    margin-top: -14.5em;
+  }
+  .anuncio {
+    width: 17em;
+    height: 7em;
   }
 }
