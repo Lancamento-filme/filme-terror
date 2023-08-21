@@ -673,7 +673,7 @@ ul li:last-child {
 /* Responsividade para smartphones */
 @media (max-width: 480px) {
   body {
-    background: url("./images-selecionadas/celular-wallpaper.jpeg") repeat fixed;
+    background: url("./images-selecionadas/celular-wallpaper.jpeg") no-repeat fixed;
     background-size: cover;
     animation: none;
   }
