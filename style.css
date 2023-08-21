@@ -620,6 +620,11 @@ ul li:last-child {
 /* tela de tablets */
 @media (max-width: 900px) {
   body {
+    background: url("./images-selecionadas/cel.png") no-repeat fixed;
+    background-size: cover;
+    animation: none;
+  }
+  body {
     font-size: 12px;
   }
  
@@ -672,6 +677,11 @@ ul li:last-child {
 
 /* Responsividade para smartphones */
 @media (max-width: 480px) {
+  body {
+    background: url("./images-selecionadas/cel.png") no-repeat fixed;
+    background-size: cover;
+    animation: none;
+  }
   body {
     font-size: 10px;
   }
