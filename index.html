@@ -17,10 +17,10 @@
   <body>
 
     <audio autoplay loop>
-      <source src="./audio/jogo.mp3" type="audio/mpeg">
+      <source src="./audio/jogo.mp3" volume="0.1" type="audio/mpeg">
       Seu navegador não suporta a reprodução de áudio.
     </audio>
-    
+
     <div id="cima">
       <!-- Titulo e data de lançamento - a home -->
       <div id="home">
@@ -70,7 +70,7 @@
         <section id="trailer">
           <h2>Trailer</h2>
           <div class="video">
-            <iframe
+            <iframe volume="1"
               src="https://www.youtube.com/embed/h2lVX71L_3A"
               title="YouTube video player"
               frameborder="0"
@@ -97,7 +97,7 @@
         <section id="teaser">
           <h2>Teaser</h2>
           <div class="video">
-            <iframe
+            <iframe controls volume="1"
               width="560"
               height="315"
               src="https://www.youtube.com/embed/f-zqS2CiZqw"
