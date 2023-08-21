@@ -620,11 +620,6 @@ ul li:last-child {
 /* tela de tablets */
 @media (max-width: 900px) {
   body {
-    background: url("./images-selecionadas/cel.png") no-repeat fixed;
-    background-size: cover;
-    animation: none;
-  }
-  body {
     font-size: 12px;
   }
  
@@ -678,7 +673,7 @@ ul li:last-child {
 /* Responsividade para smartphones */
 @media (max-width: 480px) {
   body {
-    background: url("./images-selecionadas/cel.png") no-repeat fixed;
+    background: url("./images-selecionadas/cel.png") repeat fixed;
     background-size: cover;
     animation: none;
   }
@@ -705,5 +700,21 @@ ul li:last-child {
   font-size: 12px;
   line-height: 1em;
  }
+
+ .letter {
+  transition: 0.04s;
+  transform: translateX(0);
+  cursor: grab;
+  color: #ffaa00;
+  text-shadow: 0 0 15px #ff0000;
+}
+
+.letter:hover {
+  background: -webkit-linear-gradient(to bottom, rgba(255, 0, 0, 0.662), transparent);
+  background: linear-gradient(45deg, #330000, #6d0000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
 
 }
