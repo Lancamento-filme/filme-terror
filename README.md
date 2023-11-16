@@ -1,0 +1,1 @@
+Este repositório contém o código-fonte de um website dedicado à promoção fictícia do filme "Five Nights At Freddy's - O Pesadelo Sem Fim". O projeto foi desenvolvido para fornecer informações sobre o filme, apresentando-se de maneira atrativa e funcional.
