@@ -75,7 +75,8 @@ body {
 }
 
 #home {
-  width: 100vw;
+  width: 90vw;
+  margin: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -99,11 +100,7 @@ h2 {
   font-weight: 600;
 }
 
-h3 {
-  font-family: "Special Elite", cursive;
-}
-
-p {
+h3, p {
   font-family: "Special Elite", cursive;
 }
 
@@ -185,7 +182,6 @@ button {
 #descricao {
   display: flex;
   justify-content: center;
-  /* height: 60vh; */
   margin-top: 5em;
 }
 
@@ -240,7 +236,7 @@ button {
 #elenco img:hover {
   flex: 1 1 100px;
   opacity: 1;
-  transform: rotate(0deg); /* Reverte a rotação ao passar o mouse */
+  transform: rotate(0deg);
   cursor: pointer;
 }
 
@@ -295,10 +291,10 @@ button {
 @keyframes blink-background {
   0%,
   100% {
-    background-color: black; /* Dark background */
+    background-color: black; 
   }
   50% {
-    background-color: rgba(0, 0, 0, 0.2); /* Slightly transparent background */
+    background-color: rgba(0, 0, 0, 0.2); 
   }
 }
 
@@ -317,16 +313,15 @@ footer h2 {
   font-family: "Rubik Wet Paint", cursive;
 }
 
-footer a:hover {
-  color: #ff6666; /* Dark red */
-}
-
-/* Dark background and hover effect for links */
 footer a {
   background-color: #222;
   padding: 8px 16px;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #ff6666; 
 }
 
 ul {
@@ -369,7 +364,7 @@ ul li:last-child {
   height: 9%;
   width: 5%;
   bottom: 0;
-  left: 0; /* Define a posição no canto inferior esquerdo */
+  left: 0; 
   margin: 1em;
 }
 
@@ -617,7 +612,6 @@ ul li:last-child {
   }
 }
 
-/* tela de tablets */
 @media (max-width: 900px) {
   body {
     font-size: 12px;
@@ -670,7 +664,6 @@ ul li:last-child {
    }
 }
 
-/* Responsividade para smartphones */
 @media (max-width: 480px) {
   body {
     background: url("./images-selecionadas/celular-wallpaper.jpeg") no-repeat fixed;
